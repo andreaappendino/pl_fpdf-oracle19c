@@ -1,8 +1,10 @@
 # PL_FPDF for Oracle 19c
 
-A compatibility-focused version of **PL_FPDF 0.9.4** for **Oracle Database 19c** and **AL32UTF8** databases.
+A compatibility-focused version of a legacy **PL_FPDF** codebase for **Oracle Database 19c** and **AL32UTF8** databases.
 
-This project is based on the original PL_FPDF 0.9.4 by Pierre-Gilles Levallois and contributors, a PL/SQL port of FPDF 1.53 by Olivier Plathey.
+This project derives from a legacy PL_FPDF deployment by Pierre-Gilles Levallois and contributors, itself a PL/SQL port of FPDF 1.53 by Olivier Plathey.
+
+The source has a mixed historical lineage: its original header identifies version `0.9.2` (2006), while the public `PL_FPDF_VERSION` constant reports `0.9.4`. Both details are intentionally preserved in the source rather than presenting this repository as an official upstream PL_FPDF release.
 
 The goal of this project is deliberately conservative:
 
@@ -12,7 +14,7 @@ It is **not a rewrite** and does not introduce a new API.
 
 ## Why this project exists
 
-PL_FPDF 0.9.4 was designed for older Oracle Database versions and relies on Oracle Multimedia, in particular:
+This legacy PL_FPDF codebase was designed for older Oracle Database versions
 
 ```text
 ORDSYS.ORDImage
@@ -97,7 +99,7 @@ Characters outside the Windows-1252 repertoire require a PDF implementation usin
 
 Based on:
 
-**PL_FPDF 0.9.4**
+Based on a legacy PL_FPDF codebase whose source header identifies version `0.9.2` and whose public `PL_FPDF_VERSION` constant reports `0.9.4`.
 
 Original author: Pierre-Gilles Levallois  
 Contributors: PL_FPDF contributors  
