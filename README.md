@@ -14,7 +14,7 @@ It is **not a rewrite** and does not introduce a new API.
 
 ## Why this project exists
 
-This legacy PL_FPDF codebase was designed for older Oracle Database versions
+This legacy PL_FPDF codebase was designed for older Oracle Database versions and relies on Oracle Multimedia, in particular:
 
 ```text
 ORDSYS.ORDImage
